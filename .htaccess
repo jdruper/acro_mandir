@@ -1,0 +1,9 @@
+# Use PHP 5.3
+AddType application/x-httpd-php53 .php
+
+DirectoryIndex index.html
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.html [QSA,L]
+RewriteRule .? - [E=Authorization:%{HTTP:Authorization}]
