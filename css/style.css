@@ -453,6 +453,78 @@ li.masthead-li {
 	 list-style: none;
 }
 
+/* »  Navegation « */
+header, nav{
+    display: block;
+}
+
+/*header{
+    background: #22282e;
+    height:60px;
+    position: relative;
+    width: 100%;
+    z-index: 2
+}*/
+
+/*#logo{
+    background: url("../images/logo_yogamandir.png") no-repeat 0 0;
+    display: block;
+    float: left;
+    margin: 6px 10px 0;
+    max-width:100%;
+    width: 153px;
+    text-indent: -9999px
+}*/ 
+    
+#menu{float: right;}   
+
+    #menu ul{
+        /*list-style: none;
+        font-size: 14px;*/
+		float: right;
+    	margin: 0 0 0.1em 0;
+		padding: 0;
+		
+    }
+        #menu li{
+           /*display: block;
+           float: left;
+           text-transform: uppercase;
+           text-align: center;*/
+			float: left;
+			font-size: 16px;
+			line-height: 1em;
+			list-style: none outside none;
+			margin: 0 ;
+        }
+            #menu li a{
+                display: block;
+                /* text-decoration: none;
+                height: 60px;
+                line-height: 60px;*/
+                padding: 0 0 0 10px;
+            }
+            #menu li a:hover{
+                color: #c4258a;
+            }
+    
+    #nav-mobile{
+        display: none;
+        background: url(../assets/nav.png) no-repeat center center;
+        float: right;
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        right: 0;
+        top:0;
+        opacity: .6;
+
+    }   
+        #nav-mobile.nav-active{
+            opacity: 1;
+        }
+
+
 footer.site-footer:before {
 	 content: "";
 	 display: table;
@@ -698,6 +770,7 @@ a.footer-a-s {
 	 line-height: 50px;
 }
 
+
 } @media screen and (max-width: 480px) {
 	 div.grid-unit {
 	 width: 100%;
@@ -733,6 +806,47 @@ a.footer-a-s {
 	 font-style: normal;
 	 line-height: 50px;
 }
+
+    #nav-mobile{ display: block; }
+	
+    #menu{
+        width: 100%;
+        float: none;
+        padding-top: 60px;
+    }
+
+        #menu ul{
+            -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.5);
+            -moz-box-shadow: 0 1px 2px rgba(0,0,0,.5);
+            box-shadow: 0 1px 2px rgba(0,0,0,.5);
+            max-height: 0;
+            overflow: hidden;
+        }
+           
+            #menu li{
+                background: #444444;
+                border-bottom: 1px solid #282b30;
+                float: none;
+            }
+            #menu li:last-child{ border-bottom: 0;}
+                #menu li a{
+                    padding: 15px 0;
+                    height: auto;
+					color:#ffffff;
+                    line-height: normal;
+					text-align: center;
+                }
+                #menu li a:hover{background:#2a2d33}
+				
+        #menu ul.open-menu{
+			width: 100%;
+            max-height: 400px;	
+            -webkit-transition: max-height .4s;
+            -moz-transition: max-height .4s;
+            -ms-transition: max-height .4s;
+            -o-transition: max-height .4s;
+            transition: max-height .4s;
+        }
 
 } @media screen and (max-width: 320px) {
 	 li.masthead-li {
