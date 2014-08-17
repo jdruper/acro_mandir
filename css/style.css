@@ -523,7 +523,87 @@ header, nav{
         #nav-mobile.nav-active{
             opacity: 1;
         }
+/* » Contributors « */
 
+ul.col-3-css { 
+	height:352px;
+}
+
+ul.col-3-css li {
+	 margin: 0 0 1.5em;
+}
+ul.col-3-css li a {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+#contributorsOne, #contributorsTwo, #contributorsThree, #contributorsFour, #contributorsFive, #contributorsSix , #contributorsSeven {
+  margin:0 auto;
+  transition: background-image 1s ease-in-out;
+  background-position:top;
+  text-indent: -9999px;
+  cursor: pointer;
+}
+#contributorsOne:hover, #contributorsTwo:hover, #contributorsThree:hover, #contributorsFour:hover, #contributorsFive:hover, #contributorsSix:hover, #contributorsSeven:hover {
+  background-position:bottom;
+}
+#contributorsOne{ 
+  	width:96px;
+  	height:81px;
+	background-image:url("../assets/promenade.jpg");
+}
+#contributorsOne:hover {
+	background-image:url("../assets/promenade.jpg");
+}
+#contributorsTwo { 
+ 	width:140px;
+ 	height:66px;
+	background-image:url("../assets/danzaire.jpg");
+}
+#contributorsTwo:hover {
+	background-image:url("../assets/danzaire.jpg");
+}
+#contributorsThree { 
+ 	width:133px;
+ 	height:129px;
+	background-image:url("../assets/casa_lamat.jpg");
+}
+#contributorsThree:hover {
+	background-image:url("../assets/casa_lamat.jpg");
+}
+#contributorsFour { 
+ 	width:151px;
+ 	height:80px;
+	background-image:url("../assets/punto_muerto.jpg");
+}
+#contributorsFour:hover {
+	background-image:url("../assets/punto_muerto.jpg");
+}
+#contributorsFive { 
+ 	width:105px;
+ 	height:85px;
+	background-image:url("../assets/jaguar.jpg");
+}
+#contributorsFive:hover {
+	background-image:url("../assets/jaguar.jpg");
+}
+#contributorsSix { 
+ 	width:169px;
+ 	height:58px;
+	background-image:url("../assets/la_nave.jpg");
+}
+#contributorsSix:hover {
+	background-image:url("../assets/la_nave.jpg");
+}
+#contributorsSeven { 
+ 	width:133px;
+ 	height:118px;
+	background-image:url("../assets/acroyoga.jpg");
+}
+#contributorsSeven:hover {
+	background-image:url("../assets/acroyoga.jpg");
+}
+/* end */
 
 footer.site-footer:before {
 	 content: "";
@@ -785,6 +865,7 @@ ul.col-3-css {
 	 -moz-column-count: 1;
 	 -ms-column-count: 1;
 	 column-count: 1;
+	 height:765px;
 }
 
 body {
