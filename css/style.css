@@ -453,6 +453,7 @@ li.masthead-li {
 	 list-style: none;
 }
 
+<<<<<<< HEAD
 /* »  Navegation « */
 header, nav{
     display: block;
@@ -605,6 +606,8 @@ ul.col-3-css li a {
 }
 /* end */
 
+=======
+>>>>>>> parent of cb89b46... Menu Responsive
 footer.site-footer:before {
 	 content: "";
 	 display: table;
@@ -850,7 +853,6 @@ a.footer-a-s {
 	 line-height: 50px;
 }
 
-
 } @media screen and (max-width: 480px) {
 	 div.grid-unit {
 	 width: 100%;
@@ -887,47 +889,6 @@ a.footer-a-s {
 	 font-style: normal;
 	 line-height: 50px;
 }
-
-    #nav-mobile{ display: block; }
-	
-    #menu{
-        width: 100%;
-        float: none;
-        padding-top: 60px;
-    }
-
-        #menu ul{
-            -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.5);
-            -moz-box-shadow: 0 1px 2px rgba(0,0,0,.5);
-            box-shadow: 0 1px 2px rgba(0,0,0,.5);
-            max-height: 0;
-            overflow: hidden;
-        }
-           
-            #menu li{
-                background: #444444;
-                border-bottom: 1px solid #282b30;
-                float: none;
-            }
-            #menu li:last-child{ border-bottom: 0;}
-                #menu li a{
-                    padding: 15px 0;
-                    height: auto;
-					color:#ffffff;
-                    line-height: normal;
-					text-align: center;
-                }
-                #menu li a:hover{background:#2a2d33}
-				
-        #menu ul.open-menu{
-			width: 100%;
-            max-height: 400px;	
-            -webkit-transition: max-height .4s;
-            -moz-transition: max-height .4s;
-            -ms-transition: max-height .4s;
-            -o-transition: max-height .4s;
-            transition: max-height .4s;
-        }
 
 } @media screen and (max-width: 320px) {
 	 li.masthead-li {
